@@ -1,0 +1,44 @@
+body{
+    background: light grey
+}
+
+.qbo1, .qbox2, .qbox3 {
+    box-sizing: ;
+}
+.qbox1{
+    
+    margin: 20px;
+    border: 15px solid black;
+    padding: 10px 15px;
+    width: 500px;
+    background: white;
+    border-radius: 25;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+
+
+}
+
+.qbox2 {
+
+    margin: 20px;
+    border: 25px dotted darkblue;
+    padding: 20px 35px;
+    width: 500px;
+    background: light pink;
+    border-radius: 45;
+    font-style: normal;
+
+
+}
+
+.qbox3 {
+
+    margin: 20px;
+    border: 35px solid darkred;
+    padding: 50px 
+    width: 500px;
+    background: light pink;
+    border-radius: 90px;
+  
+}
