@@ -1,0 +1,129 @@
+
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Background and Font */
+    body {
+        font-family: 'Creepster', cursive, sans-serif;
+        color: #ffebcd;
+        background-color:  #1a1a1a;
+        text-shadow: 1px 1px 2px #000;
+        background: url('spooky-background.jpg') center/cover no-repeat; /* Optional: spooky background image */
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+    /* Grid Layout */
+    #wrapper {
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "main"
+            "footer";
+        gap: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Header and Navigation */
+    header {
+        grid-area: header;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    nav ul li {
+        color: #ffa31a;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li:hover {
+        color: #ff1a1a;
+    }
+
+    /* Main Content */
+    main {
+        grid-area: main;
+        text-align: center;
+    }
+
+    main h1 {
+        font-size: 2.5rem;
+        color: #ffa31a;
+        margin-bottom: 20px;
+        animation: flicker 1.5s infinite alternate;
+    }
+
+    @keyframes flicker {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+
+    main img {
+        width: 70%;
+        margin-bottom: 20px;
+        border: 3px solid #ffa31a;
+        border-radius: 10px;
+        animation: shake 3s infinite;
+        background: #ffa31a;
+    }
+
+    @keyframes shake {
+        0%, 100% { transform: rotate(-2deg); }
+        50% { transform: rotate(2deg); }
+    }
+
+    /* Sections Styling */
+    section {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0 0 10px rgba(255, 165, 26, 0.3);
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+        color: #ff1a1a;
+        margin-bottom: 10px;
+    }
+
+    section p {
+        line-height: 1.5;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    /* Footer */
+    footer {
+        grid-area: footer;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.2rem;
+        color: #ffebcd;
+        background-color: rgba(255, 165, 26, 0.6);
+        border-radius: 5px;
+        animation: fade 2s infinite alternate;
+    }
+
+    @keyframes fade {
+        0% { opacity: 0.7; }
+        100% { opacity: 1; }
+    }
