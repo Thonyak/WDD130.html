@@ -1,0 +1,141 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the basic styling for body */
+body {
+    font-family: 'Arial', sans-serif; /* Body font */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;  /* Primary color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, header h2 {
+    margin-bottom: 10px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #2ecc71;  /* Secondary color */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table for color palette */
+table.colors {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+table.colors th, table.colors td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table.colors th {
+    background-color: #3498db; /* Primary color */
+    color: white;
+}
+
+/* Typography section styles */
+h3, h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.colored {
+    color: #e74c3c;  /* Accent color */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Styling for the wireframes section */
+hr {
+    margin: 30px 0;
+    border: 1px solid #ccc;
+}
+
+.sitemap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.sitemap div {
+    flex: 1;
+    padding: 10px;
+    background-color: #ecf0f1;
+    margin: 0 10px;
+}
+
+.sitemap div.sm-home {
+    background-color: #3498db; /* Primary color */
+    color: white;
+}
+
+.sitemap div.sm-page2, .sitemap div.sm-page3 {
+    background-color: #2ecc71; /* Secondary color */
+    color: white;
+}
+
+/* Styling for images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Make sure to add responsiveness */
+@media (max-width: 768px) {
+    nav {
+        padding: 10px;
+    }
+
+    .sitemap {
+        flex-direction: column;
+    }
+}
