@@ -30,7 +30,7 @@ body {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
-    background-color: rgb(9, 121, 241);
+    background-color: rgb(7, 7, 7);
     color: white;
 }
 
